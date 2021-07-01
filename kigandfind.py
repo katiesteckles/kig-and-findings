@@ -32,5 +32,6 @@ distro = []
 for i in range(9):
     distro.append(len([match for match in matches if len(match[2]) == i]))
 
-
+# Harder questions for another day:
 # do any cards have a symbol that could be removed?
+# if you just pick a random set of symbols to put on each card, how close to these stats do you get?,
