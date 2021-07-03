@@ -2,7 +2,7 @@ import itertools
 import random
 
 NUM_SYMBOLS = 63
-DECK_SIZE = 53
+DECK_SIZE = 55
 SYMBOLS_ON_CARD = 8
 
 num_match_freqs_1000 = []
