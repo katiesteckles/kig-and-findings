@@ -19,8 +19,10 @@ for i in range(55):
 
 # largest overlap between two cards = 4
 largest_overlap = max([len(match[2]) for match in matches])
+
 # how many pairs achieve that = 6
 len([match for match in matches if len(match[2])==largest_overlap])
+
 # what cards is that
 eldritch_horror = [match for match in matches if len(match[2])==largest_overlap]
 
@@ -35,3 +37,15 @@ for i in range(9):
 # Harder questions for another day:
 # do any cards have a symbol that could be removed?
 # if you just pick a random set of symbols to put on each card, how close to these stats do you get?,
+# what's the largest monomatching game contained within this game?
+
+import networkx
+monomatch_graph = networkx.Graph()
+monomatches = [match for match in matches if len(match[2]) == 1]
+monomatch_nodes = [match[0] for match in matches].extend([match[1] for match in matches])
+
+for node in monomatches:
+    monomatch_graph.add_node()
+    monomatch_graph.add_nodes_from([2, 3])
+
+
